@@ -5,14 +5,38 @@ body {
   color: #434455;
   background-color: #fff;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
 ul {
   list-style-type: none;
+  padding-left: 0;
+  margin: 0;
 }
 a {
   text-decoration: none;
   font-style: normal;
 }
 
+.conteiner {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+
+.site-header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 .logo-link {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -61,6 +85,7 @@ address {
   font-size: 56px;
   text-align: center;
   letter-spacing: 1.12px;
+  padding: 188px 472px 292px 472px;
 }
 .main-title .btn {
   cursor: pointer;
@@ -79,6 +104,10 @@ address {
   background-color: #404bbf;
 }
 
+.information-about-company {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .information-about-company .information-section h3 {
   color: #2e2f42;
   font-weight: 500;
@@ -89,9 +118,13 @@ address {
 .information-about-company .information-section p {
   letter-spacing: 0.32px;
 }
+.information-section-title {
+  margin-bottom: 8px;
+}
 
 .team {
   background-color: #f4f4fd;
+  padding-top: 120px;
 }
 .team .team-title {
   font-weight: 700;
@@ -101,6 +134,7 @@ address {
   letter-spacing: 0.72px;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 .team-information .name {
   color: #2e2f42;
@@ -119,7 +153,10 @@ address {
   font-size: 16px;
 }
 
-.portfolio .portfolio-title {
+.portfolio {
+  padding-top: 120px;
+}
+.portfolio-title {
   color: #2e2f42;
   text-align: center;
   font-size: 36px;
@@ -127,6 +164,7 @@ address {
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .portfolio-information .portfolio-item h3 {
   color: #2e2f42;
@@ -142,7 +180,9 @@ address {
   letter-spacing: 0.32px;
 }
 
-footer {
+.footer-site {
+  padding-top: 101.5px;
+  padding-bottom: 100px;
   background-color: #2e2f42;
 }
 .logo-link-footer {
@@ -158,6 +198,8 @@ footer {
   color: #f4f4fd;
 }
 .footer-text {
+  max-width: 264px;
   color: #f4f4fd;
   letter-spacing: 0.32px;
+  margin-top: 16px;
 }
