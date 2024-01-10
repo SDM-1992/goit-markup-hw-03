@@ -26,6 +26,16 @@ a {
   font-style: normal;
 }
 
+.conteiner-heder {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  outline: 2px solid red;
+  display: flex;
+}
+.main-nav {
+  display: flex;
+}
 .conteiner {
   width: 100%;
   max-width: 1440px;
@@ -33,10 +43,6 @@ a {
   outline: 2px solid red;
 }
 
-.site-header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
 .logo-link {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -45,49 +51,66 @@ a {
   color: #4d5ae5;
   line-height: 1.17;
   letter-spacing: 0.54px;
+  padding: 25.5px 0 25.5px 156px;
 }
 .logo-link span {
   color: #2e2f42;
 }
-.navigation .navigation-item {
+.navigation {
+  display: flex;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: 76px;
+  margin-right: 332px;
+  gap: 40px;
+}
+.navigation-link {
   color: #2e2f42;
   font-weight: 500;
   letter-spacing: 0.32px;
 }
-.navigation .navigation-item:hover {
+.navigation-link:hover {
   color: #404bbf;
 }
-.navigation .navigation-item:focus {
-  color: #404bbf;
-}
-
-.contact .contact-item {
-  color: #434455;
-  letter-spacing: 0.32px;
-}
-.contact .contact-item:hover {
-  color: #404bbf;
-}
-.contact .contact-item:focus {
+.navigation-link:focus {
   color: #404bbf;
 }
 address {
   font-style: normal;
 }
+.contact-info {
+  display: flex;
+  margin: 24px 0;
+}
+.contact .contact-link {
+  color: #434455;
+  letter-spacing: 0.32px;
+}
+.contact .contact-link:hover {
+  color: #404bbf;
+}
+.contact .contact-link:focus {
+  color: #404bbf;
+}
+.contact-item:not(:last-child) {
+  margin-right: 40px;
+}
 
-.main-title {
-  color: #fff;
+.title-conteiner {
+  padding: 188px 472px 188px 472px;
   background-color: #2e2f42;
+}
+.main-title {
   line-height: 1.07;
 }
-.main-title .title {
+.title {
+  color: #fff;
   font-weight: 700;
   font-size: 56px;
   text-align: center;
   letter-spacing: 1.12px;
-  padding: 188px 472px 292px 472px;
 }
-.main-title .btn {
+.btn {
   cursor: pointer;
   color: #fff;
   background-color: #4d5ae5;
@@ -96,37 +119,56 @@ address {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.64px;
+  padding: 16px 32px;
+  border-radius: 4px;
+  margin-left: 164px;
+  margin-top: 48px;
+  border: none;
 }
-.main-title .btn:hover {
+.btn:hover {
   background-color: #404bbf;
 }
-.main-title .btn:focus {
+.btn:focus {
   background-color: #404bbf;
 }
 
-.information-about-company {
-  padding-top: 120px;
-  padding-bottom: 120px;
+
+
+.information {
+  display: flex;
+  padding: 120px 156px;
+  gap: 24px;
 }
-.information-about-company .information-section h3 {
-  color: #2e2f42;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.4px;
+.information-section {
+  width: calc((100% - 24px * 3) / 4);
 }
-.information-about-company .information-section p {
-  letter-spacing: 0.32px;
+.information-about-company-title {
+  display: none;
 }
 .information-section-title {
-  margin-bottom: 8px;
+color: #2E2F42;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.20;
+letter-spacing: 0.4px;
+margin-bottom: 8px;
 }
+.information-section-text {
+color:#434455;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.50;
+letter-spacing: 0.32px;
+}
+
 
 .team {
   background-color: #f4f4fd;
   padding-top: 120px;
 }
-.team .team-title {
+.team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -136,17 +178,15 @@ address {
   color: #2e2f42;
   margin-bottom: 72px;
 }
-.team-information .name {
+.name {
   color: #2e2f42;
   background-color: #fff;
-}
-.team-information .name h3 {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.4px;
   font-weight: 500;
 }
-.team-information .name-text {
+.name-text {
   color: #434455;
   font-weight: 400;
   letter-spacing: 0.32px;
@@ -195,7 +235,7 @@ address {
   letter-spacing: 0.54px;
 }
 .logo-link-footer span {
-  color: #f4f4fd;
+  color:#f4f4fd;
 }
 .footer-text {
   max-width: 264px;
