@@ -29,8 +29,7 @@ img {
   display: block;
 }
 .container {
-  width: 100%;
-  max-width: 1158px;
+  width: 1158px;
   margin: 0 auto;
   padding: 0 15px 0 15px;
   border: 2px solid red;
@@ -44,7 +43,7 @@ header {
 .main-nav {
   display: flex;
   align-items: center;
-  padding: 24px 0 24px 0;
+  padding: 24px 0 24px;
 }
 
 .logo-link {
