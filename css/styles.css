@@ -34,7 +34,11 @@ img {
   margin: 0 auto;
   padding: 0 15px 0 15px;
 }
-header {
+
+.site-header {
+  padding: 24px 0;
+}
+.header {
   border-bottom: 1px solid #e7e9fc;
 }
 .heder-container {
@@ -44,7 +48,6 @@ header {
 .main-nav {
   display: flex;
   align-items: center;
-  padding: 24px 0 24px;
 }
 
 .logo-link {
@@ -80,7 +83,6 @@ address {
 }
 .contact-info {
   display: flex;
-  padding: 24px 0 24px;
   gap: 40px;
 }
 .contact .contact-link {
@@ -94,10 +96,12 @@ address {
   color: #404bbf;
 }
 
+.main-title {
+  padding: 188px 0;
+  background-color: #2e2f42;
+}
 .title-container {
   width: auto;
-  background-color: #2e2f42;
-  padding: 188px 0 188px;
 }
 .main-title {
   line-height: 1.07;
@@ -128,7 +132,7 @@ address {
   display: block;
   margin: 0 auto;
   min-height: 56px;
-  width: 169px;
+  min-width: 169px;
 }
 .btn:hover {
   background-color: #404bbf;
@@ -137,18 +141,25 @@ address {
   background-color: #404bbf;
 }
 
+.information-about-company {
+  padding: 120px 0 120px;
+}
 .information {
   display: flex;
-  padding: 120px 0 120px;
   justify-content: center;
   gap: 24px;
 }
 .information-section {
   width: calc((100% - 3 * 24px) / 4);
 }
-.information-about-company-title {
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
+
 .information-section-title {
   color: #2e2f42;
   font-size: 20px;
@@ -167,10 +178,11 @@ address {
   letter-spacing: 0.32px;
 }
 
-.team-container {
-  padding: 120px 0 120px;
+.team {
+  padding: 120px 0;
   background-color: #f4f4fd;
 }
+
 .team-information {
   display: flex;
   gap: 24px;
@@ -210,9 +222,10 @@ address {
   text-align: center;
 }
 
-.portfolio-container {
+.portfolio {
   padding: 120px 0;
 }
+
 .portfolio-title {
   color: #2e2f42;
   text-align: center;
@@ -251,7 +264,7 @@ address {
   letter-spacing: 0.32px;
 }
 
-.footer-container {
+.footer-site {
   padding: 100px 0;
   background-color: #2e2f42;
 }

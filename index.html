@@ -6,6 +6,13 @@
     <title>Web studio</title>
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
     <link
@@ -22,37 +29,39 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container heder-container">
-        <nav class="main-nav">
-          <a class="logo-link" href="./index.html">Web<span>Studio</span></a>
-          <ul class="navigation">
-            <li class="navigation-item">
-              <a class="navigation-link" href="./index.html">Studio</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="">Portfolio</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <address class="contact">
-          <ul class="contact-info">
-            <li class="contact-item">
-              <a class="contact-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="contact item">
-              <a class="contact-link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
-      </div>
+    <header>
+      <section class="site-header">
+        <div class="container heder-container">
+          <nav class="main-nav">
+            <a class="logo-link" href="./index.html">Web<span>Studio</span></a>
+            <ul class="navigation">
+              <li class="navigation-item">
+                <a class="navigation-link" href="./index.html">Studio</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="">Portfolio</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="contact">
+            <ul class="contact-info">
+              <li class="contact-item">
+                <a class="contact-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contact item">
+                <a class="contact-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+      </section>
     </header>
 
     <main>
@@ -65,9 +74,7 @@
 
       <section class="information-about-company">
         <div class="container">
-          <h2 class="information-about-company-title">
-            Information about our company
-          </h2>
+          <h2 class="visually-hidden">Information about our company</h2>
           <ul class="information">
             <li class="information-section">
               <h3 class="information-section-title">Strategy</h3>
