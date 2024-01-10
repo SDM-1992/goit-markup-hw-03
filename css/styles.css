@@ -94,8 +94,6 @@ address {
   color: #404bbf;
 }
 
-
-
 .title-container {
   width: auto;
   background-color: #2e2f42;
@@ -112,9 +110,9 @@ address {
   line-height: 1.071;
   max-width: 496px;
   text-align: center;
- display: block;
- margin: 0 auto;
-margin-bottom: 48px; 
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 48px;
 }
 .btn {
   cursor: pointer;
@@ -271,7 +269,7 @@ margin-bottom: 48px;
 .logo-link-footer span {
   color: #f4f4fd;
 }
-.footer-text {
+.footer-txt {
   max-width: 264px;
   color: #f4f4fd;
   letter-spacing: 0.32px;
