@@ -29,7 +29,8 @@ img {
   display: block;
 }
 .container {
-  width: 1158px;
+  width: 100%;
+  max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px 0 15px;
   border: 2px solid red;
@@ -39,6 +40,7 @@ header {
 }
 .heder-container {
   display: flex;
+  justify-content: space-between;
 }
 .main-nav {
   display: flex;
@@ -79,7 +81,8 @@ address {
 }
 .contact-info {
   display: flex;
-  margin: 24px 0;
+  padding: 24px 0 24px;
+  gap: 40px;
 }
 .contact .contact-link {
   color: #434455;
@@ -91,13 +94,13 @@ address {
 .contact .contact-link:focus {
   color: #404bbf;
 }
-.contact-item:not(:last-child) {
-  margin-right: 40px;
-}
+
+
 
 .title-container {
-  padding: 188px 472px 188px 472px;
+  width: auto;
   background-color: #2e2f42;
+  padding: 188px 0 188px;
 }
 .main-title {
   line-height: 1.07;
@@ -106,8 +109,13 @@ address {
   color: #fff;
   font-weight: 700;
   font-size: 56px;
-  text-align: center;
   letter-spacing: 1.12px;
+  line-height: 1.071;
+  max-width: 496px;
+  text-align: center;
+ display: block;
+ margin: 0 auto;
+margin-bottom: 48px; 
 }
 .btn {
   cursor: pointer;
@@ -118,11 +126,12 @@ address {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.64px;
-  padding: 16px 32px;
   border-radius: 4px;
-  margin-left: 164px;
-  margin-top: 48px;
   border: none;
+  display: block;
+  margin: 0 auto;
+  min-height: 56px;
+  width: 169px;
 }
 .btn:hover {
   background-color: #404bbf;
@@ -133,14 +142,15 @@ address {
 
 .information {
   display: flex;
-  padding: 120px 156px;
+  padding: 120px 0 120px;
+  justify-content: center;
   gap: 24px;
 }
 .information-section {
-  width: calc((100% - 24px * 3) / 4);
+  width: calc((100% - 3 * 24px) / 4);
 }
 .information-about-company-title {
-  display: none;
+  visibility: hidden;
 }
 .information-section-title {
   color: #2e2f42;
@@ -160,12 +170,12 @@ address {
   letter-spacing: 0.32px;
 }
 
-.team {
+.team-container {
+  padding: 120px 0 120px;
   background-color: #f4f4fd;
 }
 .team-information {
   display: flex;
-  padding: 72px 156px 120px 156px;
   gap: 24px;
 }
 .team-title {
@@ -176,7 +186,7 @@ address {
   letter-spacing: 0.72px;
   text-transform: capitalize;
   color: #2e2f42;
-  padding-top: 120px;
+  margin-bottom: 72px;
 }
 .name {
   color: #2e2f42;
@@ -185,22 +195,27 @@ address {
   line-height: 1.2;
   letter-spacing: 0.4px;
   font-weight: 500;
-  width: calc((100% - 24px * 3) / 4);
+  width: calc((100% - 3 * 24px) / 4);
+  border-radius: 0 0 4px 4px;
+}
+.work-and-name {
+  padding: 32px 0;
 }
 .name-title {
-  padding-top: 32px;
   text-align: center;
+  margin-bottom: 8px;
 }
 .name-text {
   color: #434455;
   font-weight: 400;
   letter-spacing: 0.32px;
   font-size: 16px;
-  padding-top: 8px;
-  padding-bottom: 32px;
   text-align: center;
 }
 
+.portfolio-container {
+  padding: 120px 0;
+}
 .portfolio-title {
   color: #2e2f42;
   text-align: center;
@@ -209,17 +224,20 @@ address {
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
-  padding-top: 120px;
+  margin-bottom: 72px;
 }
 .portfolio-information {
   display: flex;
   flex-wrap: wrap;
-  padding: 72px 156px 120px 156px;
   gap: 48px 24px;
 }
 .portfolio-item {
-  border: 1px solid #e7e9fc;
   width: calc((100% - 24px * 2) / 3);
+}
+.type-and-name {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .portfolio-item-title {
   color: #2e2f42;
@@ -227,21 +245,17 @@ address {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.4px;
-  padding-top: 32px;
-  padding-left: 16px;
+  margin-bottom: 8px;
 }
 .portfolio-item-text {
   color: #434455;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.32px;
-  padding-top: 8px;
-  padding-bottom: 32px;
-  padding-left: 16px;
 }
 
 .footer-container {
-  padding: 101.5px 1020px 100px 156px;
+  padding: 100px 0;
   background-color: #2e2f42;
 }
 .logo-link-footer {
@@ -252,12 +266,13 @@ address {
   text-transform: uppercase;
   color: #4d5ae5;
   letter-spacing: 0.54px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .logo-link-footer span {
   color: #f4f4fd;
 }
 .footer-text {
-  padding-top: 16px;
   max-width: 264px;
   color: #f4f4fd;
   letter-spacing: 0.32px;
