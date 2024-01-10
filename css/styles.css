@@ -30,8 +30,10 @@ img {
 }
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1158px;
   margin: 0 auto;
+  padding: 0 15px 0 15px;
+  border: 2px solid red;
 }
 header {
   border-bottom: 1px solid #e7e9fc;
@@ -41,6 +43,8 @@ header {
 }
 .main-nav {
   display: flex;
+  align-items: center;
+  padding: 24px 0 24px 0;
 }
 
 .logo-link {
@@ -51,17 +55,13 @@ header {
   color: #4d5ae5;
   line-height: 1.17;
   letter-spacing: 0.54px;
-  padding: 25.5px 0 25.5px 156px;
+  margin-right: 76px;
 }
 .logo-link span {
   color: #2e2f42;
 }
 .navigation {
   display: flex;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  margin-left: 76px;
-  margin-right: 332px;
   gap: 40px;
 }
 .navigation-link {
