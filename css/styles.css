@@ -25,14 +25,19 @@ a {
   text-decoration: none;
   font-style: normal;
 }
-.conteiner {
+img {
+  display: block;
+}
+.container {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
 }
-.heder-conteiner {
-  display: flex;
+header {
   border-bottom: 1px solid #e7e9fc;
+}
+.heder-container {
+  display: flex;
 }
 .main-nav {
   display: flex;
@@ -91,7 +96,7 @@ address {
   margin-right: 40px;
 }
 
-.title-conteiner {
+.title-container {
   padding: 188px 472px 188px 472px;
   background-color: #2e2f42;
 }
@@ -236,7 +241,7 @@ address {
   padding-left: 16px;
 }
 
-.footer-conteiner {
+.footer-container {
   padding: 101.5px 1020px 100px 156px;
   background-color: #2e2f42;
 }
