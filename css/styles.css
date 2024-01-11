@@ -79,11 +79,11 @@ img {
 }
 .contact {
   font-style: normal;
+  padding: 24px 0;
 }
 .contact-info {
   display: flex;
   gap: 40px;
-  padding: 24px 0;
 }
 .contact .contact-link {
   color: #434455;
