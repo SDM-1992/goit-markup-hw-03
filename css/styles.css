@@ -40,6 +40,7 @@ img {
 }
 .heder-container {
   display: flex;
+  justify-content: space-between;
 }
 .main-nav {
   display: flex;
@@ -79,13 +80,15 @@ img {
 }
 .contact {
   font-style: normal;
-  padding: 24px 0;
 }
 .contact-info {
   display: flex;
   gap: 40px;
 }
-.contact .contact-link {
+.contact-item {
+  padding: 24px 0;
+}
+.contact-link {
   color: #434455;
   letter-spacing: 0.32px;
 }
