@@ -65,12 +65,12 @@ img {
   gap: 40px;
 }
 .navigation-item {
-  padding: 24px 0;
 }
 .navigation-link {
   color: #2e2f42;
   font-weight: 500;
   letter-spacing: 0.32px;
+  padding: 24px 0;
 }
 .navigation-link:hover {
   color: #404bbf;
@@ -80,11 +80,11 @@ img {
 }
 .contact {
   font-style: normal;
-  padding: 24px 0;
 }
 .contact-info {
   display: flex;
   gap: 40px;
+  padding: 24px 0;
 }
 .contact-item {
 }
